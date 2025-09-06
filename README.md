@@ -1,60 +1,65 @@
-ROMI – My Personal Voice Assistant
+# ROMI - Personal Voice Assistant
 
-This is a small project I made in Python where I built my own voice assistant called Romi. The idea was simple: I wanted to stop doing repetitive tasks like opening Google, YouTube, or Facebook manually and instead just tell my computer what to do.
+This is a small project I made in Python.  
+It is a voice assistant called Romi.  
+Instead of opening websites or doing tasks manually, I can give voice commands and Romi does it for me.  
 
-What Romi Can Do
+---
 
-Responds when I say “Romi”
+## What Romi Can Do
 
-Opens websites like Google, YouTube, LinkedIn, Facebook, WhatsApp
+- Responds when I say "Romi"  
+- Opens Google, YouTube, Facebook, LinkedIn, WhatsApp  
+- Plays songs from my musiclibrary.py file  
+- Gets news using NewsAPI  
+- Talks back using text-to-speech  
 
-Plays songs from my own music library file
+---
 
-Reads out the latest news (using the News API)
+## Why I Made This
 
-Talks back to me using text-to-speech
+I made this project to practice Python.  
+It also helped me understand how voice can be changed to text, how APIs return data, and how automation saves time.  
 
+---
 
+## Libraries Used
 
+- speechrecognition  
+- pyttsx3  
+- webbrowser  
+- requests  
+- musiclibrary.py (my own file for songs)  
 
-Why I Built This
+---
 
-I wanted to learn how speech recognition, text-to-speech, and APIs work together in Python. Instead of making a simple “Hello World” project, I decided to make something that I could actually use. Now I can tell Romi things like:
+## How to Run
 
-“Open Google”
+1. Clone this project  
+2. Install libraries:  
+   pip install speechrecognition pyttsx3 requests  
+3. Add your songs inside musiclibrary.py, for example:  
 
-“Play believer”
+   songs = {  
+       "believer": "https://www.youtube.com/watch?v=7wtfhZwyrcc",  
+       "shapeofyou": "https://www.youtube.com/watch?v=JGwWNGJdvx8"  
+   }  
 
-“News”
+4. Run the script:  
+   python romi.py  
 
-And it does the task for me.
+Say "Romi" and then give a command.  
 
+---
 
+## Future Work
 
+- Add weather updates  
+- Store commands in a file  
+- Make it understand more sentences  
 
-How to Run
+---
 
-Clone the repo
+## Author
 
-Install dependencies:
-
-pip install speechrecognition pyttsx3 requests
-
-
-(Optional) Edit musiclibrary.py with your favorite songs (YouTube links work).
-
-Run:
-
-python romi.py
-
-Things I Want to Add Later
-
-Weather updates
-
-Better wake word detection
-
-Maybe integration with Spotify or YouTube Music
-
-Note
-
-This project is still very much in progress. I mostly use it for fun and to explore how assistants like Alexa or Siri might work behind the scenes.
+I made this project while learning Python and Data Analytics.  
